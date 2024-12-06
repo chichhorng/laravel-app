@@ -30,7 +30,15 @@ return [
     */
 
     'connections' => [
-
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_DSN'),
+            'database' => env('DB_DATABASE', 'myVirtualDatabase'),
+            'options'  => [
+                'tls' => true,
+            ],
+        ],
+        
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
