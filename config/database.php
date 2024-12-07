@@ -33,10 +33,7 @@ return [
         'mongodb' => [
             'driver' => 'mongodb',
             'dsn' => env('DB_DSN'),
-            'database' => env('DB_DATABASE', 'myVirtualDatabase'),
-            'options'  => [
-                'tls' => true,
-            ],
+            'database' => env('DB_DATABASE', ''),
         ],
 
         'sqlite' => [
