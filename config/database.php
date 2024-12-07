@@ -38,7 +38,7 @@ return [
                 'tls' => true,
             ],
         ],
-        
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
